@@ -22,7 +22,6 @@ data$Date <- as.Date(data$Date, "%d/%m/%Y")
 data <- data[data$Date >= startDate & data$Date <= endDate, ]
 
 # Graph
-hist(data$Global_active_power, xlab = "Global Active Power (kilowatts)", col = "red")
-title(main = "Global Active Power")
+hist(data$Global_active_power, xlab = "Global Active Power (kilowatts)", col = "red", main = "Global Active Power")
 dev.copy(png, file = "plot1.png")
 dev.off()

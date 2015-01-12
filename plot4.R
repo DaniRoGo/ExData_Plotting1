@@ -29,7 +29,7 @@ with(data, {
     plot(DateTime, Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
     lines(DateTime, Sub_metering_2, type = "l", col = "red")
     lines(DateTime, Sub_metering_3, type = "l", col = "blue")
-    legend("topright", names(data)[7:9], col = c("black", "red", "blue"), lty = 1)
+    legend("topright", names(data)[7:9], col = c("black", "red", "blue"), lty = 1, bty = "n")
     plot(DateTime, Global_reactive_power, xlab = "datetime", type = "l")
 })
 dev.copy(png, file = "plot4.png")
